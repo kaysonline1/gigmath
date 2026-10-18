@@ -1,6 +1,6 @@
 /* GigMath pure calculation functions (also exported for Node tests) */
 const SS_WAGE_BASE_2026 = 184500; // verify yearly at ssa.gov
-const IRS_MILE_RATE_2026 = 0.725;  // verify yearly at irs.gov (standard mileage rates)
+const IRS_MILE_RATE_2026 = 0.76;  // business rate Jul 1–Dec 31 2026 (Announcement 2026-11). Jan 1–Jun 30 2026 was 0.725 (Notice 2026-10).
 function gigProfit({pay=0,tips=0,fees=0,miles=0,mpg=25,gas=3.5,wear=0.10,other=0,hours=1}){
   const fuel = mpg>0 ? miles/mpg*gas : 0, wearCost = miles*wear;
   const net = pay+tips-fees-fuel-wearCost-other;

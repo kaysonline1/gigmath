@@ -9,7 +9,7 @@ jobs:
     environment: { name: github-pages, url: "${{ steps.d.outputs.page_url }}" }
     steps:
       - uses: actions/checkout@v4
-      - run: rm -rf build.py test.js *.md preview-*.png
+      - run: rm -rf build.py guides_extra.py build_pro_kit.py test.js *.md preview-*.png downloads/pro
       - uses: actions/configure-pages@v5
       - uses: actions/upload-pages-artifact@v3
         with: { path: . }

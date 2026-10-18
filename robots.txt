@@ -1,3 +1,4 @@
 User-agent: *
 Allow: /
+Disallow: /downloads/pro/
 Sitemap: https://kaysonline1.github.io/gigmath/sitemap.xml

@@ -8,6 +8,7 @@
 label{display:flex;flex-direction:column;font-size:.9rem;font-weight:600}input{font:inherit;padding:9px;border:1px solid #cbd5e0;border-radius:6px;margin-top:4px;width:100%}
 .out{margin-top:14px}.out table,#items{width:100%;border-collapse:collapse}.out td,#items td,#items th{padding:6px;border-bottom:1px solid #edf2f7}.out td:last-child{text-align:right;font-weight:700}
 .big{font-size:1.8rem;color:#14a46b;font-weight:800}.aff{background:#fff8e6;border:1px dashed #e0b84c;border-radius:8px;padding:12px;margin:18px 0}.small{font-size:.82rem;color:#718096}
+article h2{margin:1.4rem 0 .4rem;font-size:1.25rem}details{background:#fff;border:1px solid #e2e8f0;border-radius:8px;padding:8px 14px;margin:8px 0}summary{cursor:pointer;font-weight:600}details p{margin:.4rem 0 0}
 footer{margin-top:50px;background:#0f2a43;color:#cfe3f5;padding:18px 0}footer a{color:#fff}
 @media(max-width:600px){.hero h1{font-size:1.9rem}nav a{margin:0 10px 0 0}}
 @media print{header,footer,.btn,.aff,h2,p{display:none}.tool{border:0}}
