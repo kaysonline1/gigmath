@@ -1,1 +1,1 @@
-# gigimath
+# gigmath
