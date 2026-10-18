@@ -8,6 +8,7 @@ def page(path,title,desc,body,depth=None):
     pre="../"*path.count("/")
     nav="".join(f'<a href="{pre}{h[1:]}">{t}</a>' for h,t in NAV)
     html=f'''<!doctype html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<meta name="google-site-verification" content="KAWCMBSbq604hMIWI6Tml4BGcNKZZ-RXAt_9gTeH3hY" />
 <title>{title} | {SITE}</title><meta name="description" content="{desc}"><link rel="canonical" href="{URL}/{path}">
 <meta property="og:title" content="{title}"><meta property="og:description" content="{desc}"><meta property="og:type" content="website"><meta property="og:url" content="{URL}/{path}">
 <link rel="stylesheet" href="{pre}assets/style.css">{GA}</head><body>
