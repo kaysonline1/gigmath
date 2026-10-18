@@ -1,0 +1,10 @@
+const c=require('./assets/calc.js');const a=require('assert');const near=(x,y)=>a.ok(Math.abs(x-y)<0.01,x+' vs '+y);
+let g=c.gigProfit({pay:150,tips:50,fees:0,miles:100,mpg:25,gas:4,wear:0.1,other:0,hours:8});near(g.fuel,16);near(g.wearCost,10);near(g.net,174);near(g.perHour,21.75);near(g.perMile,1.74);
+let m=c.mileageDeduction({miles:10000,rate:0.725,tolls:50,taxRate:0.25});near(m.deduction,7300);near(m.estSavings,1825);
+let s=c.seTax({profit:30000,w2:0,incomePct:12});near(s.se,4238.87);near(s.income,3345.67);near(s.quarterly,1896.13);
+near(c.seTax({profit:300}).total,0);
+let s2=c.seTax({profit:50000,w2:180000});near(s2.ss,4500*0.124);
+let f=c.freelanceRate({income:60000,expenses:6000,hoursWeek:25,weeks:46,taxPct:25});near(f.gross,88000);near(f.hourly,76.52);
+let i=c.invoiceTotal([{qty:2,rate:100},{qty:3,rate:50}],8,50);near(i.sub,350);near(i.tax,24);near(i.total,324);
+let e=c.earningsGoal({goal:1000,perHour:25,daysWeek:5});near(e.hours,40);near(e.perDay,8);
+console.log('ALL CALC TESTS PASSED');

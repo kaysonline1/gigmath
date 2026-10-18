@@ -1,0 +1,3 @@
+User-agent: *
+Allow: /
+Sitemap: https://kaysonline1.github.io/gigimath/sitemap.xml

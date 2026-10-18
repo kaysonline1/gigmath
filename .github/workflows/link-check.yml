@@ -1,0 +1,11 @@
+# Weekly broken-link check (free on GitHub Actions). Opens no issues; check the run log.
+name: Weekly link check
+on: { schedule: [ { cron: "0 14 * * 1" } ], workflow_dispatch: {} }
+jobs:
+  lychee:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - run: node test.js
+      - uses: lycheeverse/lychee-action@v2
+        with: { args: "--no-progress --exclude '#' --exclude 'example.github.io' './**/*.html'", fail: true }

@@ -1,0 +1,13 @@
+*{box-sizing:border-box}body{margin:0;font:16px/1.6 system-ui,-apple-system,Segoe UI,Roboto,sans-serif;color:#1d2433;background:#f6f8fb}
+.wrap{max-width:1040px;margin:auto;padding:0 18px}header{background:#0f2a43;color:#fff}header .wrap{display:flex;flex-wrap:wrap;align-items:center;justify-content:space-between;padding:12px 18px}
+.logo{color:#fff;font-size:1.4rem;text-decoration:none}.logo b{color:#3ddc97}nav a{color:#cfe3f5;margin-left:14px;text-decoration:none}nav a:hover{color:#fff}
+.hero{padding:48px 0 24px}.hero h1{font-size:2.6rem;margin:0}.hero em{color:#14a46b;font-style:normal}.lead{font-size:1.15rem;color:#4a5568}
+.btn{display:inline-block;background:#14a46b;color:#fff;border:0;padding:11px 18px;border-radius:8px;font-weight:600;text-decoration:none;cursor:pointer;margin:6px 4px 6px 0}.btn.alt{background:#0f2a43}
+.cards{display:grid;grid-template-columns:repeat(auto-fill,minmax(230px,1fr));gap:14px}.card{background:#fff;border:1px solid #e2e8f0;border-radius:12px;padding:16px;color:inherit;text-decoration:none}.card:hover{border-color:#14a46b}.card h3{margin:0 0 6px;font-size:1.05rem}.card p{margin:0;color:#5a6577;font-size:.93rem}
+.tool{background:#fff;border:1px solid #e2e8f0;border-radius:12px;padding:20px}.grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(220px,1fr));gap:12px}
+label{display:flex;flex-direction:column;font-size:.9rem;font-weight:600}input{font:inherit;padding:9px;border:1px solid #cbd5e0;border-radius:6px;margin-top:4px;width:100%}
+.out{margin-top:14px}.out table,#items{width:100%;border-collapse:collapse}.out td,#items td,#items th{padding:6px;border-bottom:1px solid #edf2f7}.out td:last-child{text-align:right;font-weight:700}
+.big{font-size:1.8rem;color:#14a46b;font-weight:800}.aff{background:#fff8e6;border:1px dashed #e0b84c;border-radius:8px;padding:12px;margin:18px 0}.small{font-size:.82rem;color:#718096}
+footer{margin-top:50px;background:#0f2a43;color:#cfe3f5;padding:18px 0}footer a{color:#fff}
+@media(max-width:600px){.hero h1{font-size:1.9rem}nav a{margin:0 10px 0 0}}
+@media print{header,footer,.btn,.aff,h2,p{display:none}.tool{border:0}}

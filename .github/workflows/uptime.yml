@@ -1,0 +1,11 @@
+# Uptime check every 6 hours. Set SITE_URL in the curl line after deploying.
+name: Uptime check
+on: { schedule: [ { cron: "0 */6 * * *" } ], workflow_dispatch: {} }
+jobs:
+  ping:
+    runs-on: ubuntu-latest
+    steps:
+      - run: |
+          SITE_URL="https://kaysonline1.github.io/gigimath/"
+          code=$(curl -s -o /dev/null -w "%{http_code}" -L "$SITE_URL")
+          echo "HTTP $code"; test "$code" = "200"
