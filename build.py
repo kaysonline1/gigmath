@@ -1,5 +1,5 @@
 import os, datetime
-SITE="GigMath"; URL="https://kaysonline1.github.io/gigimath"
+SITE="GigMath"; URL="https://kaysonline1.github.io/gigmath"
 NAV=[("/index.html","Home"),("/tools/index.html","Tools"),("/guides/index.html","Guides"),("/free-download.html","Free Log"),("/pro.html","Pro Kit"),("/about.html","About")]
 GA='''<!-- ANALYTICS (free). Option A GoatCounter: create free account at goatcounter.com, pick a code, then uncomment:
 <script data-goatcounter="https://YOURCODE.goatcounter.com/count" async src="//gc.zgo.at/count.js"></script>
